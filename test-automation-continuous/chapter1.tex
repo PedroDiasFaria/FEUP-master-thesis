@@ -1,0 +1,64 @@
+\chapter{Introduction} \label{chap:intro}
+
+\section*{}
+
+Hardware validation process is essential when the hardware is used on complex embedded integrated systems in applications that pretend to reduce drastically the system costs and expand its durability\cite{TroyScott}.
+
+In embedded systems, various interfaces are distributed by multiple blocs of hardware. The interaction between these systems wraps an integration of the Firmware and its respective hardware. Examples of these systems are the Reset and Clock, energy management, security and other blocks\cite{Abarbanel}.
+
+Although the growing complexity of the systems, namely the interaction between firmware and hardware, the process of functional hardware validation needs to be drastically reduced and become more effective due to the "time-to-market". This requirement is even more relevant on the mobile communication industry, making the validation process a major part of the project development cost\cite{Puri-Jobi2015}.
+
+These criteria motivate the creation of an automatic hardware validation environment, with characteristics that permit conducting systematic and automatic tests, as well as providing verification indicators tracking and test quality\cite{ShixiaoYan2015}\cite{Gupta11titleantares}.
+%TODO
+
+In this document we describe the development of a solution to help development teams track their work progress in their Jenkins projects. It is expected to help the validation process both in Hardware and Software development by creating a certain level of abstraction, so it can be applied to both
+
+This chapter presents an introduction to the document, by making an overview of the problem, explaining our motivation and the goals we pretend to achieve and the dissertation structure.
+
+\section{Context} \label{sec:context}
+
+This Dissertation was proposed by Synopsys Portugal, chosen as the MSc Dissertation in Informatics and Computing Engineering of the Faculty of Engineering of the University of Porto.
+It emerged from the need to monitor and exhibit the status of current projects in development to stakeholders not accustomed to the used development tools. In this case, the Jenkins CI.
+%TODO
+
+In order to mitigate the complexity of the problem, new validation techniques will have to be investigated in which functional requirements are verified by stimulating the Hardware with configurations and specific test sequences.
+
+SNPS Portugal Lda office is located at Maia (Tecmaia) and it is one of the offices of Synopsys Inc, the leading American company by sales in the Electronic Design Automation industry. 
+
+The Synopsys IPK R\&D team, the one collaborating with this project, is the team responsible for the validation process of the developed IP designs~\cite{snps:ipInitiative}, following a specific set of requirements and specifications to be verified accordingly a series of compliance tests defined by the technologies consortia~\cite{snps:hdmiConsortium}~\cite{snps:pciConsortium}.
+
+This team raised the need of having a more centralized and reliable source of information regarding the validation process  of their projects. These projects consist of developing and optimizing the firmware utilized in HDMI and PCI-express sockets. 
+
+\section{Problem Statement}
+
+The subjectivity of validation process in any kind of software development requires the use of some type of structure and categorization of data. This can help an easier access in troubleshooting flaws in the development.
+
+The hypothesis is that with our solution, the productivity in development teams will increase by having this information displayed in a streamlined, precise and straightforward way.
+
+In order to validate this, the system has to be implemented in a real project and feedback collected by the team to understand if the value added is noticeable.
+
+
+\section{Motivation and Goals} \label{sec:goals}
+
+The hardware validation process is directly related with verifying if the different clients configurations will be fulfilled. As such, the validation process can become a subjective process, since it involves assessing how the behavior of the hardware will operate in the most diverse applications and conditions. The process typically consists of activities which include system modeling, prototyping and evaluation by the user.
+
+With this dissertation, we helped to build up a continuous integration environment for hardware validation by developing a Jenkins plugin in form of a dashboard in order to help Synopsys R\&D teams on the hardware prototyping process. 
+
+To achieve this, the goals for the dissertation are:
+
+%TODO performance indicators?
+\begin{itemize}
+\item Define an automatic test management structure for Hardware validation;
+\item Define techniques to label and manage the Hardware validation test results;
+\item Development of an web application to support the automatic test system;
+\item Test the web application and validate its usefulness.
+\end{itemize}
+
+\section{Document Structure} \label{sec:struct}
+
+In addition to the introduction, this dissertation report contains 5 other chapters. 
+Chapter~\ref{chap:sota} describes the state of the art and present related work.
+Chapter ~\ref{chap:research_problem} presents the system we want to base our study on and test.
+Chapter ~\ref{ch:solution} describes the implementation of our application.
+Results and evaluation are shown in chapter ~\ref{chap:evaluation}.
+Finally, in chapter~\ref{ch:concl}, is presented the conclusions and future work suggestions.

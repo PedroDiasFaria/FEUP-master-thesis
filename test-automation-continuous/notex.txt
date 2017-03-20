@@ -1,0 +1,5 @@
+https://xebialabs.com/the-ultimate-devops-tool-chest/continuous-integration/
+
+https://xebialabs.com/solutions/jenkins/xl-release/
+
+http://engineering.instagram.com/posts/1125308487520335/continuous-deployment-at-instagram/

@@ -1,0 +1,34 @@
+\chapter{Conclusions and Future work} \label{ch:concl}
+
+\section*{}
+
+In the end of this project we were able to develop successfully the intended Dashboard application. 
+
+Although narrowed down some features expected in the beginning of the project, such as displaying metrics about the hardware validation process due to time constraints between the end of development and testing  of the Plugin, we believe it will greatly help development teams to keep track of their projects in a simpler and streamlined way. 
+
+\section{Contributions}
+This Dashboard Plugin gathers all the needed information for any development team using Jenkins, for a quick glance at the status of their projects. It was designed considering people that are not used to Jenkins and its UI, so they can track this process with ease and improve the team productivity.
+
+The fact that it is all maintained inside of Jenkins, without the need of updating any file or distributing information by other means, has the advantage of giving anyone within the system access to this information. 
+
+With the use of Metadata and applying tags to projects, creates the habit of keeping these organized for quick information access at any time.
+
+The plugin can also be obtained within the Jenkins plugin repository, under the name \textbf{Filtered Dashboard View Plugin}~\cite{jksn:myplugin}.
+
+\section{Limitations}
+
+As referenced in the Implementation in section \ref{ch:solution}, the only limitation is the impossibility of directly addition of metadata inside a Pipeline Job, but it is provided a workaround for this issue in section~\ref{workaraound}.
+
+\section{Future Work}
+
+The Dashboard Jenkins plugin is completely functional and will immediately help Synopsys development teams, as well as whoever Jenkins user that wants to utilize it. However some continuous work is needed to improve it to fulfill future demands.
+
+As any Jenkins plugin, there will be the need of maintaining it. Every new version of the tool can introduce unanticipated bugs. This is also true for the interaction with other untested plugins.
+
+Part of the maintainability includes the improvement of the UI. Due to time restrictions, it was not put a lot of effort on it, since we prioritized the functionality of the plugin.
+
+It would add great value as well to include some metrics inside each project (e.g. average build time, average number of builds to pass in tests). For this, new parameters should be added and calculated inside the Dashboard custom classes. 
+
+Finally, we would like to contribute even more to the Jenkins community by helping in the maintenance of the Metadata Plugin~\cite{jkns:metadata} so the workaround provided in section~\ref{workaraound} is not needed anymore, and covers all types of Jobs for a total functionality of the Dashboard filtering and organizing feature.  
+
+\vspace*{12mm}

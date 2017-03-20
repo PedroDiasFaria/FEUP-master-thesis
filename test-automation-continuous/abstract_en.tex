@@ -1,0 +1,37 @@
+\chapter*{Abstract}
+
+As in software development where bugs ought to be detected and fixed as soon as possible, hardware validation is in the same level of priority when used in applications that seek to dramatically reduce costs and extend systems life.
+%%it is used in complex embedded systems that are integrated in applications that seek to dramatically reduce costs and extend the systems life. 
+
+In these complex embedded systems, various interface systems, such as Field-Programmable Gate Arrays (FPGAs), are distributed across multiple hardware blocks. 
+
+The interaction between the various systems involves an integration of firmware and its hardware.
+With the growing complexity of this systems, specially this interaction, it is imperative to reduce the time of the functional validation process of the hardware.
+
+To achieve this, there is the need to implement an automatic validation hardware environment, allowing systematic and automatic tests on the hardware, as well as showing performance metrics of the hardware with a specific combination of each element in the system board, such as the Driver version on the CPU, the Verilog version configuring the FPGA, and the board version itself.
+
+In this thesis, being conducted at Synopsys Porto, it will be described how an automatic test validation environment in continuous integration is structured and apply it on the context of hardware validation. 
+
+%Afterwards it will be investigated validation techniques to verify the functional requirements by stimulating the hardware blocs with specific settings and test sequences. 
+It will be also outlined the process to create a dashboard view with the different information related to the systems in testing, with the intent of helping stakeholders within the development teams have a more streamlined view of the process results.
+
+%PERFORMANCE INDICATORS?
+%VALIDATION TECHNIQUES?
+
+%%not clear what the difference is with the first goal. If the first goal is more theoretical, then do not mention Jenkins there. 
+
+%%It is also need to say something more about ‘new validation techniques. What are these? What do you mean with hardware validation techniques, is the system running in the FPGA or really the design of the hardware that is being tested? The latter seems complicated because usually is done in simulators, and when the hardware is printed it is typically without defects (otherwise it is very expensive). 
+
+%%So, is this to test the design of the hardware or the software running in this particular pieces of the hardware? This has to be clear to the reader.
+
+\vspace*{10mm}\noindent
+
+\noindent\textbf{Keywords}: \emph{Continuous Integration}, \emph{Hardware Validation}
+
+\vspace*{5mm}\noindent
+
+\noindent\textbf{Classification}: 
+\begin{itemize}
+\item \emph{Software and its engineering $\rightarrow$ Software creation and management $\rightarrow$ Software verification and validation}; 
+\item \emph{Hardware $\rightarrow$ Hardware validation}
+\end{itemize}
